@@ -1,16 +1,17 @@
-import './App.css';
-import Layout from './components/layout';
-import Profille from './components/Profille'; 
+import React from "react";
+import Layout from "./components/layout/index.js"
+import Profile from "./components/Profille/index.js";
 
-function App() {
+const App = () => {
   return (
-    <main>
-      <Profille> 
-        <div>Repositories</div>
-        <div>Starreds</div>
-      </Profille>
+    <main> 
+    <Layout>
+      <Profile />
+     <div>Repositories</div>
+     <div>Starreds</div>
+    </Layout>
     </main>
-    );
+  );
 }
 
 export default App;
