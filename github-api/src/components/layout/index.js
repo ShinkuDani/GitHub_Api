@@ -1,12 +1,14 @@
 import React from "react";
-//import * as S from "./styled"
+import Header from "../header";
+import * as S from "./styled"
 
 const Layout = ({children}) => {
+   const {githubState} = useGithub();
     return (
-        <section>
-        <header>Cabeçalho</header>
+        <S.WrapperLayout>
+        <Header />
         {children}
-    </section>
+    </S.WrapperLayout>
     );
 }
 

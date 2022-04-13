@@ -1,15 +1,16 @@
 import react from "react";
+import * as S from "./styled";
 
 const RepositoryItem = () => {
     return(
-    <div>
+    <S.Wrapper>
 
-        <h2>app-ideais</h2>
-        <h4>Full name:</h4>
-        <a href="https://github.com/ShinkuDani" target="_blanck" rel="noreferrer">ShinkuDani</a>
+        <S.WrapperTitle>app-ideais</S.WrapperTitle>
+        <S.WrapperFullname>Full name:</S.WrapperFullname>
+        <S.WrapperLink href="https://github.com/ShinkuDani" target="_blanck" rel="noreferrer">ShinkuDani</S.WrapperLink>
         <span>benits/app-ideas</span>
 
-        </div>
+        </S.Wrapper>
     );
 };
 
